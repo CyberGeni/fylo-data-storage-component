@@ -1,87 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Karla', Sans-Serif;
-} 
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
 body {
-  background-color: hsl(204, 43%, 93%);
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+body div:nth-child(1) {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 16px 60px 16px 16px;
+    padding: 16px;
 }
 main {
-  width: 80%;
-  margin: auto;
-  margin-top: 30px;
-  border-radius: 12px 12px;
+    width: 80%;
+    max-width: 400px;
 }
-.card1 {
-  background-color: white;
-  padding: 20px;
-  
+.icons {
+    display: flex;
 }
-h5 {
-  color: hsl(71, 73%, 54%);
-  margin-bottom: 20px;
-  font-size: 16px;
+.icon {
+    background-color: hsl(229, 57%, 11%);
+    padding: 12px;
+    margin-right: 8px;
+    border-radius: 8px;
 }
-.paragraph1 {
-  color: hsl(218, 22%, 67%);
-  line-height: 29px;
+body div:nth-child(2) {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 15px;
 }
-.card2 {
-  background-color: hsl(179, 62%, 43%);
-  padding: 20px;
+p {
+    color: white;
+    text-align: center;
 }
-.heading2 {
-  color: white;
-  font-size: 20px;
-  margin-bottom: 20px;
+progress  {
+    width: 95%;
+    margin: auto;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 24px;
 }
-.price {
-  color: white;
-  font-size: 26px;
-  font-weight: 700;
+::-webkit-progress-bar {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 24px;
 }
-.time-frame {
-  color: white;
+::-webkit-progress-value {
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 24px;
 }
-.access {
-  color: white;
-  margin-top: 12px;
+::-webkit-progress-inner-element {
+    padding: 2px;
 }
-button {
-  width: 100%;
-  margin: auto;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: hsl(71, 73%, 54%);
-  border: none;
-  border-radius: 4px;
-  color: white;
-  font-size: 16px;
+body div:nth-child(2) div {
+    background-color: #fff;
+    width: 150px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: -50px;
+    border-radius: 10px;
 }
-.heading1 {
-  color: hsl(179, 62%, 43%);
-  margin-bottom: 20px;
-  font-size: 20px;
+body div:nth-child(2) div span:nth-child(1) {
+    font-weight: 700;
+    font-size: 28px;
 }
-.card3 {
-  padding: 20px;
-  color: white;
-  background-color: rgb(69,208,203);
-  margin-bottom: 15px;
+section {
+    display: flex;
 }
-.heading3 {
-  margin-bottom: 20px;
-}
-.reason {
-  line-height: 22px;
-  color: color;
+@media screen and (min-width:1024px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    body div:nth-child(2) div {
+        background-color: #fff;
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        margin-top: -50px;
+        border-radius: 10px;
+    }
+    .second {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-right: 200px;
+        margin: auto;
+    }
 }
 .attribution { 
-  font-size: 11px; 
-  text-align: center;
+    font-size: 11px; 
+    text-align: center; 
+    display: grid;
 }
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%); 
 }
-/* media queries */
